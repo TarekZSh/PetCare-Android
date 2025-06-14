@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "840258986696",
+    "project_id": "petcare-31013",
+    "storage_bucket": "petcare-31013.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840258986696:android:b8fc8b212d4b5abdd6fbfd",
+        "android_client_info": {
+          "package_name": "com.technion.android.PetCare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840258986696-3cvo50vn3cd55q99clppgo0a7tn1brm4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technion.android.PetCare",
+            "certificate_hash": "344a2437a26b4192f0445592a7a1ffbb35559a4e"
+          }
+        },
+        {
+          "client_id": "840258986696-mnhp0g2l85fs7ngjmm7v0o7qg4ia0qae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technion.android.PetCare",
+            "certificate_hash": "d2b94c3c5e5c89b49fa52f43f330d79e2e35236c"
+          }
+        },
+        {
+          "client_id": "840258986696-phgino3qnu6l3eqpqtskbn775pok19fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technion.android.PetCare",
+            "certificate_hash": "22749bbc281f8b16bfe8ba169cb43a7fb19c1404"
+          }
+        },
+        {
+          "client_id": "840258986696-u0gvclovt4fogej3ocv73ip6ajamdrto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technion.android.PetCare",
+            "certificate_hash": "ddd1606b954679467196c6c6e3befe75c1793d91"
+          }
+        },
+        {
+          "client_id": "840258986696-mlosgeejk65pitcrac6ihjia0kmoms1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeSlVQ_2uI6tbidBqp8utfQ9VcjPSGQkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840258986696-23gqnqp7ocqjkgop2hu8gdkpnvevarc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
