@@ -58,12 +58,13 @@ With features ranging from medical history tracking to real-time reminders and v
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/yourusername/PetCare.git
-   cd PetCare
+   git clone https://github.com/TarekZSh/PetCare-Android.git
+   cd PetCare-Android
+   ```
 2. **Open the project** in Android Studio or your preferred Flutter IDE.
 
 3. **Set up Firebase:**
-   - Go to [Firebase Console](https://console.firebase.google.com/)
+   - Go to [Firebase Console](https://console.firebase.google.com/u/2/project/petcare-31013/overview)
    - Create a new Firebase project.
    - Add your Android app with the correct package name.
    - Download `google-services.json` and place it in `android/app/`.
@@ -78,51 +79,79 @@ With features ranging from medical history tracking to real-time reminders and v
    ```bash
    flutter pub get
    flutter run
-
+   ```
 ---
 
 ## 🧱 Firebase Structure Overview
+<details>
+<summary>📂 Click to view Firebase Structure</summary>
 
-### Users Collection
+### 🧑‍💼 Users Collection
 ```json
 {
-  "uid": "string",
+  "id": "string",                  // Firebase Auth UID
   "name": "string",
-  "email": "string",
-  "favorites": ["vetId1", "vetId2"]
+  "birthDay": "string (YYYY-MM-DD)",
+  "phoneNumber": "string",
+  "imageUrl": "string or null",
+  "bio": "string",
+  "petIds": ["string"]             // List of pet document IDs
 }
 ```
-### Pets Collection
+### 🐾 Pets Collection
 ```json
 {
-  "ownerId": "string",
+  "id": "string",                         // Unique pet ID
   "name": "string",
-  "age": "int",
+  "species": "string",
   "breed": "string",
-  "allergies": ["string"],
-  "medications": ["string"],
-  "notes": "string",
-  "vetId": "string",
-  "status": {
-    "openToWalk": true,
-    "openToBreeding": false
+  "gender": "string",
+  "age": number,
+  "birthDate": "string (ISO format)",
+  "weight": number,
+  "height": number,
+  "bio": "string",
+  "imageUrl": "string or null",
+  "owner": "string",                     // Owner's name
+  "ownerId": "string",                   // Firebase UID of the owner
+  "specialNotes": ["string"],
+  "medicalHistory": ["string"],
+  "vaccinations": ["string"],
+  "events": ["string"],
+  "vetEvents": ["string"],
+  "lastActivities": ["string"],
+  "documents": ["string"],
+  "preferences": {
+    // key-value map (custom user-defined fields)
   }
 }
 ```
-### Vets Collection
+### 🩺 Vets Collection
+
 ```json
 {
-  "vetId": "string",
+  "id": "string",                          // Firebase Auth UID
   "name": "string",
-  "specialization": "string",
-  "treatedPets": ["petId1", "petId2"]
+  "email": "string",
+  "phone": "string",
+  "location": "string",
+  "bio": "string",
+  "profileImageUrl": "string",
+  "degree": "string",
+  "university": "string",
+  "yearsOfExperience": number,
+  "specializations": ["string"],          // List of specialties
+  "patientPetIds": ["string"]             // List of pet IDs under this vet's care
 }
 ```
+</details>
 
 ---
 
 ## 📸 Screenshots
-
+<details>
+<summary>👀 Click to see the screenshots</summary>
+  
 ### 🐾 Pet Profile  
 Manage each pet's medical history, status, and personal info.  
 <img src="pet_care_app/assets/screenshots/PetProfile.jpg" alt="Pet Profile" height="650"/>
@@ -146,7 +175,7 @@ Stay updated with pet care tips and the latest pet-related news.
 ### 🔍 Explore Other Pets & Vets  
 Discover potential breeding matches and nearby veterinary services.  
 <img src="pet_care_app/assets/screenshots/Explore.jpg" alt="Pet Profile" height="650"/>
-
+</details>
 
 ---
 
