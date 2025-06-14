@@ -45,5 +45,5 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-pet_care_app/android/app/src/main/AndroidManifest.xml
-pet_care_app/assets/keys/keys-chat.json
+/android/app/src/main/AndroidManifest.xml
+/assets/keys/keys-chat.json
